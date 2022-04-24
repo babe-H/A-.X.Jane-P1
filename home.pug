@@ -1,0 +1,30 @@
+doctype html
+html(lang="en")
+    head
+      meta(charset="UTF-8")
+      meta(http-equiv="X-UA-Compatible", content="IE=edge")
+      meta(name="viewport", content="width=device-width, initial-scale=1.0")
+      title Noom
+      link(rel="stylesheet", href="https://unpkg.com/mvp.css")
+    body 
+      header
+        h1 HyunFamilly
+      main
+        div#welcome
+              form
+                  input#name(placeholder="Nickname" required type="text")
+                  input#roomName(placeholder="Room Name", required, type="text")
+                  button Enter Room
+        div#room
+              sapn
+              h3
+              ul
+              form#name
+                  input(placeholder="change nickname", type="text")
+                  button Save  
+              form#msg
+                  input(placeholder="message", required, type="text")
+                  button Send           
+      script(type="text/html" src="/socket.io/socket.io.js") 
+      script(type="text/html" src="/public/js/app.js")         
+    
